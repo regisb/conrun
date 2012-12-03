@@ -1,0 +1,13 @@
+conrun.py
+---------
+
+This is a very basic, yet extremely useful script that allows you to continuously run any given command. I use it for test-driven development and continuous building.
+
+Install:
+
+    sudo ln -s $(pwd)/conrun.py /usr/bin/conrun
+
+This is how I typically run it, provided I have a Makefile project with a
+unittest target that builds all unit tests:
+
+    conrun "make unittests && ./unittests"
